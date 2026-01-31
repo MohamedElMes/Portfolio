@@ -3,13 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
 
     <title>Accueil - Portfolio</title>
 </head>
 <body>
-    
-    
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-xl fond-nav py-4 px-5">
+        <div class="container-fluid">
+            <a class="lien-nav navbar-brand text-light" href="index.html">Mohamed EL MESBAHI BOUKACHAR</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center text-center" id="Navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="apropos.html">Á propos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="entreprises.html">Entreprises</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Compétences</a>
+                        <ul class="dropdown-menu justify-content-center text-center">
+                            <li><a class="dropdown-item fs-5" href="#">Compétences</a></li>
+                            <li><a class="dropdown-item fs-5" href="#">Certifications</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fs-5" href="#">Tableau de compétences</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projets</a>
+                        <ul class="dropdown-menu justify-content-center text-center">
+                            <li><a class="dropdown-item fs-5" href="#">Projets personnels</a></li>
+                            <li><a class="dropdown-item fs-5" href="#">Projets scolaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="veille.html">Veille</a>
+                    </li>
+                    <li class="nav-item mx-2 d-flex align-items-center  justify-content-center text-center">
+                        <a class="nav-link btn-contact px-4 fs-5 py-1" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-4 d-flex align-items-center">
+        <div class="container py-5">
+
+            <h1 class="text-center text-white fw-bold mb-5">Bienvenue sur mon portfolio</h1>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="../src/images/photo.png" class="img-fluid" alt="Photo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center text-lg-start text-white">
+                    <p class="fs-5">Bonjour, je m'appel Mohamed. Je suis actuellement étudient en BTS SIO (Services Informatiques aux Organisations) dans l'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).</p>
+                    <a href="../CV-MohamedElMesbahi.pdf" class="btn btn-warning btn-lg px-4 py-2 shadow" target="_blank">Mon CV</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
