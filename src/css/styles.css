@@ -53,3 +53,19 @@ body {
     width: 2.5rem;
     height: 2.5rem;
 }
+
+.dropdown-item:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+.navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
