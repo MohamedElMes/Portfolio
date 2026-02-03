@@ -8,7 +8,7 @@ body {
 
 .btn-contact {
     color: #BCEE00;
-    padding: auto 1rem;
+    padding: auto;
     border: 2px solid #BCEE00;
     border-radius: 20px;
     display: inline-flex;
@@ -63,7 +63,12 @@ body {
     padding-right: 3rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 310px) {
+    .navbar .container-fluid {
+        justify-content: center;
+    }
+}
+@media (max-width: 420px) {
     .navbar {
         padding-left: 0;
         padding-right: 0;
