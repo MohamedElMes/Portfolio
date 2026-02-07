@@ -3,16 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="../src/images/favicon.png">
 
     <title>Mes compétences - Portfolio</title>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-xl fond-nav py-4">
+        <div class="container-fluid">
+            <a class="lien-nav navbar-brand text-light" href="index.html">Mohamed EL MESBAHI</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center text-center" id="Navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="apropos.html">Á propos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="entreprises.html">Entreprises</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Compétences</a>
+                        <ul class="dropdown-menu justify-content-center text-center">
+                            <li><a class="dropdown-item fs-5" href="competences.html#competences">Compétences</a></li>
+                            <li><a class="dropdown-item fs-5" href="competences.html#certifications">Certifications</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fs-5" href="../TableauDeCompetences-MohamedElMesbahi.pdf" target="_blank">Tableau de compétences</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-light fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projets</a>
+                        <ul class="dropdown-menu justify-content-center text-center">
+                            <li><a class="dropdown-item fs-5" href="projets.html#personnels">Projets personnels</a></li>
+                            <li><a class="dropdown-item fs-5" href="projets.html#scolaires">Projets scolaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="lien-nav nav-link active text-light fs-5" href="veille.html">Veille</a>
+                    </li>
+                    <li class="nav-item mx-2 d-flex align-items-center justify-content-center text-center">
+                        <a class="nav-link btn-contact px-4 fs-5 py-1" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container container-bg mt-5 rounded text-white">
+        <div class="container-fluid padding-container">
+            <h1 id="competences" class="text-white">Compétences</h1>
+            <span class="bord-titre"></span>
+
+            <div class="competence__categorie mt-5" data-aos="fade-up">
+                <h3>Systèmes et Réseaux</h3>
+                <div class="progress__conteneur">
+                    <label>Linux <i class="fa-brands fa-linux fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 95%;"></div></div>
+            
+                    <label>Windows Server <i class="fa-brands fa-windows fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 90%;"></div></div>
+
+                    <label>Protocoles (DNS, DHCP, FTP...) <i class="fas fa-network-wired fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 90%;"></div></div>
+
+                    <label>Active Directory <i class="fas fa-project-diagram fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 85%;"></div></div>
+
+                    <label>Proxmox <i class="fas fa-cloud fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width:90%;"></div></div>
+                </div>
+            </div>
+        
+            <div class="competence__categorie" data-aos="fade-up">
+                <h3>Sécurité et Sauvegarde</h3>
+                <div class="progress__conteneur">
+                    <label>Pare-feux : iptables, UFW <i class="fas fa-fire fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 90%;"></div></div>
+            
+                    <label>Politique des sauvegardes <i class="fas fa-vault fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 95%;"></div></div>
+
+                    <label>Politique des mots de passe <i class="fa-brands fa-linux fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 95%;"></div></div>
+                </div>
+            </div>
+        
+            <div class="competence__categorie" data-aos="fade-up">
+                <h3>Scripting et Programmation</h3>
+                <div class="progress__conteneur">
+                    <label>Bash / PowerShell <i class="fas fa-terminal fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 85%;"></div></div>
+            
+                    <label>SQL <i class="fas fa-database fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 80%;"></div></div>
+
+                    <label>HTML/CSS <i class="fas fa-code-branch fa-xl"></i></label>
+                    <div class="progres"><div class="progres__barre" style="width: 90%;"></div></div>
+                </div>
+            </div>
+        
+            <div class="competence__categorie" data-aos="fade-up">
+                <h3>Outils & Technologies</h3>
+                <ul>
+                    <li>GLPI, Wireshark <i class="fas fa-wave-square fa-xl"></i></li>
+                    <li>Git, GitHub, Markdown <i class="fab fa-github fa-xl"></i></li>
+                </ul>
+            </div>
+        
+            <div class="competence__categorie" data-aos="fade-up">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Travail en équipe <i class="fas fa-users fa-xl"></i></li>
+                    <li>Autonomie et rigueur <i class="fas fa-user-check fa-xl"></i></li>
+                    <li>Documentation technique claire <i class="fas fa-clipboard-check fa-xl"></i></li>
+                </ul>
+            </div>
+
+            <h1 id="certifications" class="text-white mt-5">Certifications</h1>
+            <span class="bord-titre"></span>
+
+            <div class="row g-4 justify-content-center mt-3">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow border-0 text-center p-3">
+                        <img src="../src/images/tryhackme_logo.jpg" class="mx-auto" style="width:80px;" alt="HTML5">
+                        <h5 class="mt-3 fw-bold">Certification Pre Security</h5>
+                        <p class="text-muted">TryHackMe</p>
+                        <a href="#" target="_blank" class="btn bg-disabled text-white mt-auto pe-none">En cours d'obtention...</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow border-0 text-center p-3">
+                        <img src="../src/images/cisco_networking_academy1_logo.jpg" class="mx-auto" style="width:80px;" alt="HTML5">
+                        <h5 class="mt-3 fw-bold">Introduction à la Cybersécurité</h5>
+                        <p class="text-muted">Cisco Networking Academy</p>
+                        <a href="../src/images/notionsCybersecurite.jpg" target="_blank" class="btn bg-dark text-white mt-auto">Voir le certificat ↗</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow border-0 text-center p-3">
+                        <img src="../src/images/cisco_networking_academy1_logo.jpg" class="mx-auto" style="width:80px;" alt="HTML5">
+                        <h5 class="mt-3 fw-bold">Notions de base sur les réseaux</h5>
+                        <p class="text-muted">Cisco Networking Academy</p>
+                        <a href="../src/images/notionsReseaux.jpg" target="_blank" class="btn bg-dark text-white mt-auto">Voir le certificat ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <footer id="footer" class="py-5 mt-5">
+        <div class="container-fluid">
+            <div class="footer-center d-flex justify-content-between px-2">
+                <ul class="list-unstyled gap-4">
+                    <li><a target="_blank" href="https://github.com/MohamedElMes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </a></li>
+                    <li><a target="_blank" href="https://fr.linkedin.com/in/mohamed-el-mesbahi-boukachar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                    </a></li>
+                </ul>
+                <div>
+                    <p>Copyright © 2026 Mohamed El Mesbahi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/footerStick.js"></script>
 </body>
 </html>

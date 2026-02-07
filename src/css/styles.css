@@ -6,6 +6,36 @@ body {
     min-height: 100vh;
 }
 
+.presentation-txt {
+    width: 50%;
+}
+
+.bord-titre {
+    border-top: 3px solid #BCEE00;
+    display: block;
+    width: 4rem;
+    height: 3px;
+}
+.footer-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.padding-container {
+    padding: 2rem 2rem;
+}
+
+.bg-disabled {
+    background-color: rgb(68, 74, 81);
+}
+
+/*** Conteneur ***/
+.container-bg {
+    background-color: #2B2B2B;
+}
+
 .btn-contact {
     color: #BCEE00;
     padding: auto;
@@ -66,9 +96,7 @@ body {
 /*** FOOTER ***/
 
 footer {
-    background-color: #707070;
     color: #ffffff;
-    border-top: #969696 2px solid;
     padding: 0 1.5rem;
 }
 footer .footer-center div {
@@ -93,7 +121,91 @@ footer .footer-center div p {
 .footer-center ul li a:hover {
     color: #f0eeee;
 }
+.cercle {
+  width: 90px;
+  height: 90px;
+  background: #1fd11f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 14px;
+  flex-shrink: 0;
+}
 
+.contenu-apropos {
+  background: #2f4057;
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  width: 70%;
+}
+
+.contenu-apropos p {
+    color: #8FEF00;
+}
+.contenu-apropos h5 {
+    color: #2ec201;
+}
+
+.competence__categorie {
+    background: #3B4E66;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+  
+.competence__categorie h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+  
+.competence__categorie i {
+    margin-right: 8px;
+}
+  
+.competence__categorie ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ffffff;
+}
+  
+.competence__categorie ul li {
+    margin-bottom: 8px;
+}
+
+.progres__conteneur {
+    margin-top: 15px;
+}
+  
+.progress__conteneur label {
+    display: block;
+    margin-bottom: 5px;
+    color: #E5EBFB;
+    font-weight: bold;
+    line-height: 2;
+    margin-top: 1.5rem;
+}
+  
+.progres {
+    background-color: #d2d2d2;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 12px;
+    margin-bottom: 15px;
+}
+  
+.progres__barre {
+    height: 100%;
+    background: linear-gradient(45deg, #E4F4FB, #CCF0FF);
+    border-radius: 20px;
+}
 
 /*** MEDIA QUERY ***/
 
@@ -128,5 +240,34 @@ footer .footer-center div p {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 576px ) {
+    h2, .presentation-txt {
+        text-align: center;
+    }
+    .padding-container {
+        padding: 2rem .5rem 2rem .5rem;
+    }
+    .cercle {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .competence__categorie h3 {
+        text-align: center;
+    }
+    .competence__categorie ul {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 992px ) {
+    .presentation-txt {
+        width: 100%;
+    }
+    .contenu-apropos {
+        width: 100%;
     }
 }
