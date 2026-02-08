@@ -56,7 +56,29 @@
     
     <div class="container container-bg mt-5 rounded text-white">
         <div class="container-fluid padding-container">
-            
+            <h1>Me contacter</h1>
+            <span class="bord-titre"></span>
+
+            <p class="mt-2 text-break"><span class="fw-bold">Adresse mail:</span> mohamed.elmesbahi.contact@gmail.com</p>
+            <form action="mailto:mohamed.elmesbahi.contact@gmail.com" method="POST" class="mt-4" enctype="text/plain">
+                <div class="mb-3">
+                    <label class="form-label">Nom:</label>
+                    <input type="text" name="nom" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email:</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Message:</label>
+                    <textarea name="message" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary bg-success border-success btn-contact-envoyer">Envoyer</button>
+            </form>
+
         </div>
     </div>
     

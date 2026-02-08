@@ -225,6 +225,10 @@ footer .footer-center div p {
 .entreprises-liste {
     margin-left: 2rem;
 }
+.articles img {
+    max-width: 100%;
+    height: 150px;
+}
 
 /*** MEDIA QUERY ***/
 
@@ -282,6 +286,9 @@ footer .footer-center div p {
     }
     .competence__categorie ul {
         margin-left: 0px;
+    }
+    .btn-contact-envoyer {
+        width: 100%;
     }
 }
 
