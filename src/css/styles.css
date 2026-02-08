@@ -197,6 +197,10 @@ footer .footer-center div p {
     line-height: 2;
     margin-top: 1.5rem;
 }
+.progress__conteneur label svg {
+    width: 27px;
+    height: 30px;
+}
   
 .progres {
     background-color: #d2d2d2;
@@ -218,6 +222,9 @@ footer .footer-center div p {
     padding: .5rem;
     cursor: pointer;
 }
+.entreprises-liste {
+    margin-left: 2rem;
+}
 
 /*** MEDIA QUERY ***/
 
@@ -230,6 +237,9 @@ footer .footer-center div p {
     .navbar {
         padding-left: 0;
         padding-right: 0;
+    }
+    .entreprises-liste {
+        margin-left: 0;
     }
 }
 
